@@ -1,8 +1,8 @@
 const Sequelize = require('sequelize');
 const database = require('../db');
-const Categoria = require('./Category');
+const Category = require('./Category');
 
-const News = database.define('noticia', {
+const News = database.define('new', {
     id:         { type: Sequelize.INTEGER,  autoIncrement: true, allowNull: false, primaryKey: true },
     title:      { type: Sequelize.STRING,   allowNull:  false },
     body:       { type: Sequelize.STRING,   allowNull: false },
@@ -11,6 +11,6 @@ const News = database.define('noticia', {
     midia:      { type: Sequelize.STRING } 
 });
 
-News.belongsTo(Categoria, { foreignKey: 'categoria', allowNull: false });
+News.belongsTo(Category, { foreignKey: 'category', allowNull: false });
 
 module.exports = News;

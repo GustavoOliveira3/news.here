@@ -14,8 +14,8 @@ app.use(cors());
 app.set('port', PORT);
 
 // ROUTES
-app.use('/noticias', require('./routes/news-routes'));
-app.use('/categorias', require('./routes/category-routes'));
+app.use('/news', require('./routes/news-routes'));
+app.use('/categories', require('./routes/category-routes'));
 
 app.listen(app.get('port'), () => {
     console.log(`WS listen on port ${app.get('port')}`);

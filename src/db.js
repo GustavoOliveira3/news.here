@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 const sequelize = new Sequelize(
-    '', // your database name
-    '', // username to acess to database
+    'news', // your database name
+    'root', // username to acess to database
     '', // password to acess to database 
     {
         dialect: 'mysql', 

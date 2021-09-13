@@ -1,13 +1,13 @@
 const express = require('express');
 const router = express.Router();
-const Category= require('../models/Category');
+const Category = require('../models/Category');
 
 // get a category by id 
 router.get('/:id', async(req, res) => {
     try{
         let { id } = req.params;
-        let categoria = await Categoria.findByPk(id);
-        res.json({error: false, categoria});
+        let category = await Category.findByPk(id);
+        res.json({error: false, category});
     }catch(err){
         res.json({ error: true, message: err.message});
     }

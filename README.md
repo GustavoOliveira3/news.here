@@ -19,7 +19,7 @@ This is request for post new news, using JSON with informations about.
 {
   "title": String, 
   "body": String,
-  "categoryid" Integer
+  "categoryid": Integer
 }
 ```
 

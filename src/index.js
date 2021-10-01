@@ -6,7 +6,7 @@ const db = require('./db');
 // VARIABLES
 const PORT = 8080;
 
-// MIDLEWARES
+// MIDDLEWARES
 app.use(express.json());
 app.use(cors());
 

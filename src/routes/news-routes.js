@@ -58,7 +58,7 @@ router.put('/midia/:idNews', async(req, res) => {
                             id: idNews
                         }
                     });
-                    res.json({error: false, message: 'Media attached successfully!'});
+                    res.json({error: false, message: 'Midia attached successfully!'});
                 });
             });
         }else{

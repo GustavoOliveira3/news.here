@@ -8,9 +8,9 @@ The ORM on this project is Sequelize, the database chosed is mysql.
 
 ## Requests to api examples:
 ### GET /News
-This is request for get news limited by param QTD (Integer)
+This is request for get news limited by param qtd (Integer)
 ```bash
-$ curl http://localhost:8080/news/QTD
+$ curl http://localhost:8080/news/{qtd}
 ```
 
 ### POST /News
@@ -24,9 +24,9 @@ This is request for post new news, using JSON with informations about.
 ```
 
 ### PUT /News/midia
-This is request for attach midia (Image) on news.
+This is request for attach midia (Image) on news, param idNews is integer, references news by id.
 ```bash
-$ curl http://localhost:8080/news/midia/idNews
+$ curl http://localhost:8080/news/midia/{idNews}
 ```
 ```js
 {
@@ -35,9 +35,9 @@ $ curl http://localhost:8080/news/midia/idNews
 ```
 
 ### GET /Categories
-This is request for get a category for param ID (integer).
+This is request for get a category for param id (integer).
 ```bash
-$ curl http://localhost:8080/categories/ID
+$ curl http://localhost:8080/categories/{id}
 ```
 
 ### POST /Categories
